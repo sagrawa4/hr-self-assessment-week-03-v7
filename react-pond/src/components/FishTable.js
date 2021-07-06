@@ -6,9 +6,9 @@
 var FishTable = ({fishes}) => (
   <table>
     <tbody>
-      <FishTableRow fishes = {fishes}/>
-      <FishTableRow fishes = {fishes}/>
-      <FishTableRow fishes = {fishes}/>
+     {fishes.map(fish =>
+      <FishTableRow fish = {fish} />
+     )}
     </tbody>
   </table>
 );
